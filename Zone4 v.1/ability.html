@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone4 Item Manager</title>
+    <!-- ลิงก์ไปยังไฟล์ CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html">Main</a>
+            <a href="ability.html">Ability</a>
+            <a href="item.html">Items</a>
+            <a href="#">C</a>
+            <a href="#">D</a>
+            <a href="#">E</a>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Zone4 DataBass V 0.1</h1>
+                <p>อัปเดต Tools ล่าสุด 23 ธันวาคม 67</p>
+            </div>
+            
+            <div class="ability-container">
+                <div class="header">
+                    <h1>Ability</h1>
+                </div>
+                <div class="dropdowns">
+                    <label for="character">Select Character:</label>
+                    <select id="character">
+                        <option value="Wells">Wells</option>
+                        <option value="ray">Ray</option>
+                        <option value="Joony">Joony</option>
+                        <option value="Lilru">Lilru</option>
+                        <option value="Nicky">Nicky</option>
+                        <option value="Sera">Sera</option>
+                    </select>
+        
+                    <label for="level">Select Level:</label>
+                    <select id="level">
+                        <option value="1">Level 1</option>
+                        <option value="10">Level 10</option>
+                        <option value="20">Level 20</option>
+                        <option value="30" selected>Level 30</option>
+                    </select>
+                </div>
+        
+                <div class="stats">
+                    <div class="column">
+                        <h2>Attack</h2>
+                        <p>HitAtk <span id="hitAtk">610</span></p>
+                        <p>GripAtk <span id="gripAtk">610</span></p>
+                        <p>TeamAtk <span id="teamAtk">610</span></p>
+                        <p>DoubleAtk <span id="doubleAtk">610</span></p>
+                        <p>SpecialAtk <span id="specialAtk">610</span></p>
+                    </div>
+                    <div class="column">
+                        <h2>Defend</h2>
+                        <p>HitDef <span id="hitDef">542</span></p>
+                        <p>GripDef <span id="gripDef">542</span></p>
+                        <p>TeamDef <span id="teamDef">542</span></p>
+                        <p>DoubleDef <span id="doubleDef">542</span></p>
+                        <p>SpecialDef <span id="specialDef">542</span></p>
+                    </div>
+                    <div class="column">
+                        <h2>HP & SP</h2>
+                        <p>HP <span id="hp">7793</span></p>
+                        <p>SP <span id="sp">3342</span></p>
+                        <h2>Other</h2>
+                        <p>Critical <span id="critical">6.0%</span></p>
+                        <p>Critical Dmg <span id="criticalDmg">50.0%</span></p>
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <p>Status Default / Ray Level 30</p>
+                </div>
+            </div>
+        
+            <script src="script.js"></script>
+
+
+            <!--
+            <div class="calculator">
+                <div class="grid">
+                    <button>A.ATK</button>
+                    <button>A.DEF</button>
+                    <!-- เพิ่มปุ่มหรือฟังก์ชันตามต้องการ -->
+            <!--
+                </div>
+                <button>Save Data</button>
+                <button>Clear All</button>
+            </div>
+            -->
+        </div>
+        <div class="right-panel">
+            <div class="section">
+                <h3>Top Item</h3>
+                <div class="item-list">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2</div>
+                    <div class="item">Item 3</div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Top Item</h3>
+                <div class="item-list">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2</div>
+                    <div class="item">Item 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
